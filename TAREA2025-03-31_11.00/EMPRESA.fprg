@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="EMPRESA"/>
+        <attribute name="authors" value="yamilet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-31 01:08:15 a. m."/>
+        <attribute name="created" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTAzLTMxOzEyOjQ4OjQyIGEuIG0uOzI4MDQ="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTAzLTMxOzAxOjA4OjE1IGEuIG0uOzE7MjkwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;Cual es tu edad?&quot;" newline="True"/>
+            <input variable="Edad"/>
+            <if expression="Edad&lt;=3 AND Edad&gt;=0">
+                <then>
+                    <output expression="&quot;Entrada gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Edad&gt;=4 AND Edad&lt;=18">
+                        <then>
+                            <output expression="&quot;Entrada a 5&#8364;&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Edad&gt;=19">
+                                <then>
+                                    <output expression="&quot;Entrada a 10&#8364;&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
