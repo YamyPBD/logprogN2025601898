@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="DIAGRAMA PIZZERIA"/>
+        <attribute name="authors" value="yamilet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-03 10:48:50 p. m."/>
+        <attribute name="created" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTAzOzA4OjUzOjUzIHAuIG0uOzI4MjI="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTAzOzEwOjIwOjA1IHAuIG0uOzE7ZmVybmE7REVTS1RPUC0xSTdERlNGOzIwMjUtMDQtMDM7MDc6NTI6MDMgcC4gbS47UElaWkVSSUEuZnByZzs3MTcx"/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTAzOzEwOjQ4OjUwIHAuIG0uOzE7MjkyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TIPOPIZZA, INGREDIENTEV, INGREDIENTESNV" type="Integer" array="False" size=""/>
+            <output expression="&quot;ELIJA QUE TIPO DE PIZZA DESEA COMPRAR 1. SI QUIERE UNA PIZZA VEGETARIANA Y 2. SI QUIERE UNA PIZZA NO VEGETARIANA&quot;" newline="True"/>
+            <input variable="TIPOPIZZA"/>
+            <if expression="TIPOPIZZA==1">
+                <then>
+                    <output expression="&quot;ELIJA EL INGREDIENTE QUE LLEVARA SU PIZZA, 1. PIMIENTO, 2. TOFU&quot;" newline="True"/>
+                    <input variable="INGREDIENTEV"/>
+                    <if expression="INGREDIENTEV==1">
+                        <then>
+                            <output expression="&quot;GRACIAS POR SU COMPRA, SU PIZZA ES VEGETARIANA Y LOS INGREDIENTES QUE LLEVA SON MOZZARELLA, TOAMTE Y PIMIENTO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="INGREDIENTEV==2">
+                                <then>
+                                    <output expression="&quot;GRACIAS POR SU COMPRA, SU PIZZA ES VEGETARIANA Y LOS INGREDIENTES QUE LLEVA SON MOZZARELLA, TOAMTE Y TOFU&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;ELIJA EL INGREDIENTE QUE LLEVARA SU PIZZA, 1. PEPERONI, 2. JAMON, 3. SALMON&quot;" newline="True"/>
+                    <input variable="INGREDIENTESNV"/>
+                    <if expression="INGREDIENTESNV==1">
+                        <then>
+                            <output expression="&quot;GRACIAS POR SU COMPRA, SU PIZZA ES NO VEGETARIANA Y LOS INGREDIENTES QUE LLEVA SON MOZZARELLA, TOAMTE Y PEPERONI&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="INGREDIENTESNV==2">
+                                <then>
+                                    <output expression="&quot;GRACIAS POR SU COMPRA, SU PIZZA ES NO VEGETARIANA Y LOS INGREDIENTES QUE LLEVA SON MOZZARELLA, TOAMTE Y JAMON&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="INGREDIENTESNV==3">
+                                        <then>
+                                            <output expression="&quot;GRACIAS POR SU COMPRA, SU PIZZA ES NO VEGETARIANA Y LOS INGREDIENTES QUE LLEVA SON MOZZARELLA, TOAMTE Y SALMON&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
