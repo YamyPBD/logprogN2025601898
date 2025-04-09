@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="NUMERO EN FACTORIAL"/>
+        <attribute name="authors" value="yamilet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 08:10:05 p. m."/>
+        <attribute name="created" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjA0OjIxIHAuIG0uOzI4MTg="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjA4OjAwIHAuIG0uOzU7eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA3OjA5OjUyIHAuIG0uO0ZBQ1RPUklBTC5mcHJnOzcwMTM="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjEwOjA1IHAuIG0uOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, F" type="Real" array="False" size=""/>
+            <output expression="&quot;INGRESE EL NUMERO DEL CUAL QUIERA OBTENER SU FACTORIAL&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="F" expression="1"/>
+            <do expression="N&gt;=1">
+                <assign variable="F" expression="F*N"/>
+                <assign variable="N" expression="N-1"/>
+            </do>
+            <output expression="&quot;EL FACTORIAL DEL NUMERO QUE ES: &quot;" newline="True"/>
+            <output expression="F" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

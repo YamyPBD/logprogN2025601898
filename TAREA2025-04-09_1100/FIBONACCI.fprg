@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="FIBONACCI"/>
+        <attribute name="authors" value="yamilet"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:10:32 p. m."/>
+        <attribute name="created" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjU0OjU3IHAuIG0uOzI4MzI="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjU2OjI4IHAuIG0uOzI7eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzA4OjEwOjE5IHAuIG0uOzU4MjI="/>
+        <attribute name="edited" value="eWFtaWxldDtQRVJTRUlERTsyMDI1LTA0LTA4OzEwOjEwOjMyIHAuIG0uOzE7MjkxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, Y, Z, R" type="Integer" array="False" size=""/>
+            <output expression="&quot;INGRESA EL NUMERO DE LA SERIE DE FIBONACCI&quot;" newline="False"/>
+            <input variable="N"/>
+            <assign variable="Y" expression="1"/>
+            <assign variable="Z" expression="2"/>
+            <output expression="Y" newline="True"/>
+            <output expression="Z" newline="True"/>
+            <while expression="N&gt;=1">
+                <assign variable="R" expression="Y+Z"/>
+                <output expression="R" newline="True"/>
+                <assign variable="Y" expression="Z"/>
+                <assign variable="Z" expression="R"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
